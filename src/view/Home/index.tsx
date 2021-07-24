@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-
 import { Container } from './style';
 import api from '../../services/api';
 
@@ -24,7 +23,7 @@ const Home: React.FC = () => {
   }, [])
 
   const handleCart = (index: number) => {
-   let push: any = [... cart, cart.push(data[index])]
+   let push: any = [...cart, cart.push(data[index])]
    setCart(push)
    const productStore = JSON.stringify(cart);
    localStorage.setItem(`@cart`, productStore)
