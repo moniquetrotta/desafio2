@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 const api = axios.create({
-baseURL: 'http://localhost:8888/produtos'
+baseURL: 'https://my-json-server.typicode.com/moniquetrotta/desafio22/produtos'
 })
 export default api;
